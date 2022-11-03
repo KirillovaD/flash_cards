@@ -1,0 +1,22 @@
+@import "../../index.scss";
+.btn {
+  background-color: $main-color;
+  border: none;
+  border-radius: 10px;
+  color: $font-color-light;
+  padding: 10px 25px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.card__btn_hidden {
+  display: none;
+}
+
+.p__translation {
+  color: rgb(59, 107, 196);
+}
+
+.btn:hover {
+  font-size: 1.1em;
+}

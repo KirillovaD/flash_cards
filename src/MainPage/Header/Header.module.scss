@@ -1,0 +1,52 @@
+@import "../../index.scss";
+.header {
+  font-family: "Open Sans", sans-serif;
+  // border: 1px solid rgb(61, 61, 61);
+  padding: 20px 40px;
+  margin: 20px 5px;
+
+  grid-area: h;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.h1 {
+  position: relative;
+}
+
+.ul {
+  display: flex;
+  list-style: none;
+}
+li:last-child {
+  margin-left: 15px;
+}
+li {
+  color: $second-color;
+  cursor: pointer;
+}
+li:hover {
+  color: $main-color;
+  font-size: 17px;
+}
+.flash {
+  position: absolute;
+  top: -40px;
+  color: $main-color;
+}
+.vocab {
+  position: absolute;
+  top: 0px;
+  left: 5px;
+
+  color: $main-color;
+}
+.cards {
+  position: absolute;
+  top: -38px;
+  left: 125px;
+  font-size: 1.25em;
+  color: $main-color;
+}

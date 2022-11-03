@@ -1,4 +1,4 @@
-import styles from "./Deck.module.css";
+import styles from "./Deck.module.scss";
 import deck from "../../src/assets/images/multiply_icon.png";
 import arrow from "../../src/assets/images/arrow_right.png";
 

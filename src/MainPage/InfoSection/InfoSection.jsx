@@ -1,4 +1,4 @@
-import styles from "./InfoSection.module.css";
+import styles from "./InfoSection.module.scss";
 import listImg from "../../assets/images/list_icon.png";
 import card from "../../assets/images/document_icon.png";
 import add from "../../assets/images/add_icon.png";

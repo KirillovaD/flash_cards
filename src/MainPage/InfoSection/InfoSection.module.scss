@@ -1,0 +1,50 @@
+@import "../../index.scss";
+.main__info {
+  // border: 1px solid rgb(61, 61, 61);
+  padding: 20px 40px;
+  margin: 15px 5px;
+  display: flex;
+
+  justify-content: start;
+  align-items: center;
+  gap: 50px;
+
+  font-size: 16px;
+}
+
+.info__decks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+img {
+  width: 20px;
+}
+.info__crads {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.info__addDeck {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  margin-left: auto;
+  cursor: pointer;
+}
+span {
+  color: $main-color;
+}
+.info__addDeck__span {
+  cursor: pointer;
+}
+.info__addDeck__span:hover {
+  font-size: 1.3em;
+}
+.info__addDeck__img:hover {
+  width: 28px;
+}

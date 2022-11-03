@@ -1,0 +1,40 @@
+@import "../index.scss";
+
+.deck {
+  // border: 1px solid rgb(61, 61, 61);
+  background-color: $background-color-optional;
+  border-radius: 10px;
+  padding: 20px 30px;
+  margin: 15px;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  color: $font-color-main;
+}
+
+.leftEl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.rightEl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.rightEl .deck__p {
+  color: $font-color-main;
+  font-size: 1em;
+}
+
+.deck__imgArrow {
+  margin-left: 20px;
+  cursor: pointer;
+}
+.deck__imgArrow:hover {
+  width: 25px;
+}

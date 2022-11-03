@@ -1,0 +1,26 @@
+$main-color: rgb(59, 107, 196);
+$second-color: rgb(72, 132, 243);
+$font-color-main: #151616;
+$font-color-light: aliceblue;
+$background-color-optional: rgb(240, 240, 240);
+
+* {
+  font-family: "Open Sans", sans-serif;
+  color: $font-color-main;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: $main-color;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.25em;
+}
+span {
+  font-size: 1.25em;
+}
