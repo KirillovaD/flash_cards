@@ -3,23 +3,29 @@ import { useState } from "react";
 import styles from "./Card.module.scss";
 import words from "../data/words.json";
 import ButtonCheck from "./ButtonCheck";
-import Button from "../DeckPage/Button/Button";
+import arrowBack from "../assets/images/arrow_back.png";
+import arrowNext from "../assets/images/arrow_right.png";
+// import Button from "../DeckPage/Button/Button";
 
 export default function Card() {
-  const [pressed, setPressed] = useState(false);
-  const [text, addTranslation] = useState("");
-
-  let onActiveButton = () => {
-    setPressed(!pressed);
-    let translation = text;
-    translation = words[0].russian;
-    addTranslation(translation);
-  };
   return (
     <div className={styles.card}>
-      <div>
-        <h1> {words[0].english} </h1>
-        <h2>{words[0].transcription}</h2>
+      <div className={styles.card__word}>
+        <img
+          className={styles.card__arrow_back}
+          src={arrowBack}
+          alt="arrow back"
+        />
+        <div>
+          <h1> {words[0].english} </h1>
+          <h2>{words[0].transcription}</h2>
+        </div>
+
+        <img
+          className={styles.card__arrow_next}
+          src={arrowNext}
+          alt="arrow next"
+        />
       </div>
       <div>
         <ButtonCheck />
