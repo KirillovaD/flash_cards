@@ -1,13 +1,11 @@
 import React from "react";
+import Card from "./Card";
 
-import styles from "./Card.module.scss";
-// import words from "../data/words.json";
-import ButtonCheck from "./ButtonCheck";
+import styles from "./CardCarousel.module.scss";
+
 import arrowBack from "../assets/images/arrow_back.png";
 import arrowNext from "../assets/images/arrow_right.png";
 import success from "../assets/images/success_icon.png";
-import Card from "./Card";
-// import Button from "../DeckPage/Button/Button";
 
 class CardCarousel extends React.Component {
   constructor(props) {
@@ -26,11 +24,8 @@ class CardCarousel extends React.Component {
     });
   }
   onNextClick = () => {
-    let { currentIndex, words } = this.state;
+    let { currentIndex } = this.state;
     let nextIndex = currentIndex + 1;
-    // if (nextIndex === words.length) {
-    //    nextIndex = 0;
-    // }
     this.setState({ currentIndex: nextIndex });
   };
   onPrevClick = () => {
@@ -53,10 +48,11 @@ class CardCarousel extends React.Component {
             alt="arrow back"
             onClick={this.onPrevClick}
           />
-          <div className={styles.card}>
-            <Card english={card.english} transcription={card.transcription} />
-            <ButtonCheck />
-          </div>
+          <Card
+            english={card.english}
+            transcription={card.transcription}
+            translation={card.russian}
+          />
 
           <img
             className={styles.card__arrow_next}

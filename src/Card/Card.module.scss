@@ -1,31 +1,35 @@
 @import "../index.scss";
-.card__container {
-  background-color: rgb(240, 240, 240);
-  width: 25%;
-  height: 300px;
-  margin: 0 auto;
-
-  display: flex;
-
-  justify-content: space-between;
-  text-align: center;
-  align-items: center;
-  padding: 40px 20px;
-  border-radius: 25px;
-}
 
 .word__text {
   width: 200px;
 }
-.card__arrow_back,
-.card__arrow_next {
-  width: 30px;
-}
-.img__success {
-  width: 200px;
-}
+
 .card {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn {
+  background-color: $main-color;
+  border: none;
+  border-radius: 10px;
+  color: $font-color-light;
+  padding: 10px 25px;
+  font-size: 1em;
+  width: 150px;
+  margin-top: 40px;
+}
+
+.btn_hidden {
+  display: none;
+}
+
+.p__translation {
+  font-size: 2em;
+  color: rgb(59, 107, 196);
+}
+.btn:hover {
+  font-size: 1.1em;
 }

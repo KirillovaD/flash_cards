@@ -2,10 +2,9 @@ import React from "react";
 
 import styles from "./Card.module.scss";
 import data from "../data/words.json";
-import ButtonCheck from "./ButtonCheck";
+
 import arrowBack from "../assets/images/arrow_back.png";
 import arrowNext from "../assets/images/arrow_right.png";
-// import Button from "../DeckPage/Button/Button";
 
 class CardNoApi extends React.Component {
   constructor(props) {
@@ -43,9 +42,6 @@ class CardNoApi extends React.Component {
             alt="arrow next"
             onClick={this.onNextClick}
           />
-        </div>
-        <div>
-          <ButtonCheck />
         </div>
       </div>
     );
