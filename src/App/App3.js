@@ -1,4 +1,4 @@
-import Card from "../Card/Card";
+import CardCarousel from "../Card/CardCarousel";
 import CardNoApi from "../Card/CardNoApi";
 import ErrorBoundary from "../ErrorBoundery";
 
@@ -8,7 +8,7 @@ function App3() {
   return (
     <div className={styles.container}>
       <ErrorBoundary>
-        <Card />
+        <CardCarousel />
       </ErrorBoundary>
     </div>
   );
