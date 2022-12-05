@@ -13,12 +13,12 @@ class CardCarousel extends React.Component {
     this.state = {
       words: [],
       currentIndex: 0,
+      pressed: false,
     };
   }
   async componentDidMount() {
     const response = await fetch("http://itgirlschool.justmakeit.ru/api/words");
     const result = await response.json();
-    // console.log(result);
     this.setState({
       words: result,
     });
@@ -26,10 +26,16 @@ class CardCarousel extends React.Component {
   onNextClick = () => {
     let { currentIndex } = this.state;
     let nextIndex = currentIndex + 1;
-    this.setState({ currentIndex: nextIndex });
+    this.setState({ currentIndex: nextIndex, pressed: false });
   };
   onPrevClick = () => {
-    this.setState({ currentIndex: this.state.currentIndex - 1 });
+    this.setState({
+      currentIndex: this.state.currentIndex - 1,
+      pressed: false,
+    });
+  };
+  setPressed = () => {
+    this.setState({ pressed: true });
   };
 
   render() {
@@ -52,6 +58,8 @@ class CardCarousel extends React.Component {
             english={card.english}
             transcription={card.transcription}
             translation={card.russian}
+            pressed={this.state.pressed}
+            setPressed={this.setPressed}
           />
 
           <img
