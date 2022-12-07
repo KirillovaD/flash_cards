@@ -1,8 +1,8 @@
-@import "../index.scss";
+// @import "../../index.scss";
 
 .deck {
   // border: 1px solid rgb(61, 61, 61);
-  background-color: $background-color-optional;
+  background-color: rgb(240, 240, 240);
   border-radius: 10px;
   padding: 20px 30px;
   margin: 15px;
@@ -10,14 +10,21 @@
 
   justify-content: space-between;
   align-items: center;
-  color: $font-color-main;
+}
+.deck__p {
+  font-size: 1.25em;
+  color: rgb(59, 107, 196);
 }
 
 .leftEl {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
+  font-size: 1.25em;
+}
+.leftEl img {
+  width: 30px;
 }
 
 .rightEl {
@@ -25,10 +32,11 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
+  margin-top: 50px;
 }
 .rightEl .deck__p {
-  color: $font-color-main;
-  font-size: 1em;
+  color: #151616;
+  font-size: 1.15em;
 }
 
 .deck__imgArrow {

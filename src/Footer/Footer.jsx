@@ -1,6 +1,6 @@
 import styles from "./Footer.module.scss";
 
-function Footer() {
+export function Footer() {
   return (
     <div className={styles.footer}>
       <p>FlashVocabCards helps you to learn new words easely</p>
@@ -8,4 +8,3 @@ function Footer() {
     </div>
   );
 }
-export default Footer;

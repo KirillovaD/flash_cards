@@ -1,6 +1,6 @@
-import styles from "./Card.module.scss";
+import styles from "./word.module.scss";
 
-function Card(props) {
+function Word(props) {
   const onActiveButton = () => {
     props.setPressed(true);
   };
@@ -26,4 +26,4 @@ function Card(props) {
     </div>
   );
 }
-export default Card;
+export default Word;

@@ -1,0 +1,11 @@
+@import "../../index.scss";
+.main {
+  grid-area: m;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+a:hover {
+  color: $main-color;
+  font-size: 17px;
+}

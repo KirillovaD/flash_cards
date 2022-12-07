@@ -1,6 +1,6 @@
 import styles from "./Deck.module.scss";
-import deck from "../../src/assets/images/multiply_icon.png";
-import arrow from "../../src/assets/images/arrow_right.png";
+import deck from "../../../src/assets/images/multiply_icon.png";
+import arrow from "../../../src/assets/images/arrow_right.png";
 
 function Deck(props) {
   return (

@@ -1,10 +1,10 @@
 import React from "react";
 
-import styles from "./Card.module.scss";
-import data from "../data/words.json";
+import styles from "./word.module.scss";
+import data from "../../data/words.json";
 
-import arrowBack from "../assets/images/arrow_back.png";
-import arrowNext from "../assets/images/arrow_right.png";
+import arrowBack from "../../assets/images/arrow_back.png";
+import arrowNext from "../../assets/images/arrow_right.png";
 
 class CardNoApi extends React.Component {
   constructor(props) {

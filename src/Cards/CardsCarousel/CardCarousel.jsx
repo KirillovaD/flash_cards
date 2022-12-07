@@ -1,11 +1,11 @@
 import React from "react";
-import Card from "./Card";
+import Card from "../Word/Word";
 
 import styles from "./CardCarousel.module.scss";
 
-import arrowBack from "../assets/images/arrow_back.png";
-import arrowNext from "../assets/images/arrow_right.png";
-import success from "../assets/images/success_icon.png";
+import arrowBack from "../../assets/images/arrow_back.png";
+import arrowNext from "../../assets/images/arrow_right.png";
+import success from "../../assets/images/success_icon.png";
 
 class CardCarousel extends React.Component {
   constructor(props) {
