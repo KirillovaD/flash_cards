@@ -14,13 +14,13 @@ export function Layout() {
       <nav className={styles.nav}>
         <ul className={styles.ul}>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">Главная</Link>
           </li>
           <li>
-            <Link to="/cards">Cards</Link>
+            <Link to="/cards">Карточки</Link>
           </li>
           <li>
-            <Link to="/profile">Log In</Link>
+            <Link to="/profile">Личный кабинет</Link>
           </li>
         </ul>
       </nav>

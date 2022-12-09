@@ -8,15 +8,15 @@ function InfoSection() {
     <div className={styles.main__info}>
       <div className={styles.info__decks}>
         <img className={styles.info__decks__img} src={listImg} alt="list" />
-        <span className={styles.info__decks__span}> 2 decks</span>
+        <span className={styles.info__decks__span}> 2 папки</span>
       </div>
       <div className={styles.info__crads}>
         <img className={styles.info__crads__img} src={card} alt="card" />
-        <span className={styles.iinfo__crads__span}>100 fleshcards</span>
+        <span className={styles.iinfo__crads__span}>100 карточек</span>
       </div>
       <div className={styles.info__addDeck}>
         <img className={styles.info__addDeck__img} src={add} alt="add" />
-        <span className={styles.info__addDeck__span}>Add deck</span>
+        <span className={styles.info__addDeck__span}>Добавить</span>
       </div>
     </div>
   );

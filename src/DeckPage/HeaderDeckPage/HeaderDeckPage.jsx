@@ -15,12 +15,12 @@ function HeaderDeck(props) {
       </div>
       <div className={styles.headerDeck__btn}>
         <Button
-          name={"Learn"}
+          name={"Учить"}
           className="headerDeck__btn__learn"
           title="button"
         />
         <Button
-          name={"Add word"}
+          name={"Добавить слово"}
           className="headerDeck__btn__add"
           title="button"
         />

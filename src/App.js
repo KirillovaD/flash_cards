@@ -2,8 +2,10 @@ import { Routes, Route, Link } from "react-router-dom";
 import { Home } from "./Home/Home";
 import { Footer } from "./Footer/Footer";
 import { Header } from "./Header/Header";
-import { Decks } from "./Decks/Decks";
-import { Cards } from "./Cards/Cards";
+import { Deck } from "./DeckPage/Deck";
+
+import { Cards } from "./CardsPage/Cards";
+
 import ErrorBoundary from "./ErrorBoundery";
 
 import styles from "./App.module.scss";
@@ -15,7 +17,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route exact path="/deck/:id" element={<Decks />} />
+          <Route exact path="/deck/:id" element={<Deck />} />
           <Route exact path="/cards" element={<Cards />} />
           <Route exact path="/profile" element={<Profile />} />
           <Route exact path="*" element={<NoMatch />} />
