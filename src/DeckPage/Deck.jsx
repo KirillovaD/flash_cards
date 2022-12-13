@@ -2,10 +2,7 @@ import { useParams } from "react-router-dom";
 import HeaderDeck from "./HeaderDeckPage/HeaderDeckPage";
 
 export function Deck(props) {
-  // debugger;
   const { id } = useParams();
-  console.log(id);
-  // debugger;
   return (
     <div>
       {id == 1 ? (

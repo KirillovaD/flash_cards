@@ -14,6 +14,7 @@ class CardCarousel extends React.Component {
       words: [],
       currentIndex: 0,
       pressed: false,
+      wordLearned: 0,
     };
   }
   async componentDidMount() {
@@ -37,6 +38,9 @@ class CardCarousel extends React.Component {
   setPressed = () => {
     this.setState({ pressed: true });
   };
+  setWordLearned = () => {
+    this.setState({ wordLearned: this.state.wordLearned + 1 });
+  };
 
   render() {
     let { words, currentIndex } = this.state;
@@ -47,28 +51,32 @@ class CardCarousel extends React.Component {
 
     if (card) {
       return (
-        <div className={styles.card__container}>
-          <img
-            className={styles.card__arrow_back}
-            src={arrowBack}
-            alt="arrow back"
-            onClick={this.onPrevClick}
-          />
-          <Card
-            english={card.english}
-            transcription={card.transcription}
-            translation={card.russian}
-            pressed={this.state.pressed}
-            setPressed={this.setPressed}
-          />
+        <>
+          <h1>Выучено {this.state.wordLearned} слов</h1>
+          <div className={styles.card__container}>
+            <img
+              className={styles.card__arrow_back}
+              src={arrowBack}
+              alt="arrow back"
+              onClick={this.onPrevClick}
+            />
+            <Card
+              english={card.english}
+              transcription={card.transcription}
+              translation={card.russian}
+              pressed={this.state.pressed}
+              setPressed={this.setPressed}
+              setWordLearned={this.setWordLearned}
+            />
 
-          <img
-            className={styles.card__arrow_next}
-            src={arrowNext}
-            alt="arrow next"
-            onClick={this.onNextClick}
-          />
-        </div>
+            <img
+              className={styles.card__arrow_next}
+              src={arrowNext}
+              alt="arrow next"
+              onClick={this.onNextClick}
+            />
+          </div>
+        </>
       );
     }
     return "Загрузка";

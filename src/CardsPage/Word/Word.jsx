@@ -3,6 +3,7 @@ import styles from "./word.module.scss";
 function Word(props) {
   const onActiveButton = () => {
     props.setPressed(true);
+    props.setWordLearned();
   };
 
   return (
