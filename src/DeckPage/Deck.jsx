@@ -6,10 +6,9 @@ export function Deck(props) {
   const { id } = useParams();
   console.log(id);
   // debugger;
-
   return (
     <div>
-      {id == "1" ? (
+      {id == 1 ? (
         <HeaderDeck name="Еда" number="30" />
       ) : (
         <HeaderDeck name="Транспорт" number="70" />
